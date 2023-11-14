@@ -6,3 +6,302 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  */
+ /* general styles */
+body {
+height: 100%;
+width: auto;
+margin: 0;
+background-color: rgb(8, 28, 21);
+color: white;
+font-family:sans-serif;
+padding: 0;
+}
+
+
+/*     TOP LOGO     */
+
+.logo  {
+margin: 15px;
+font-weight: bolder;
+font-size: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*        HEADER        */
+
+header {
+   background-color:rgb(27, 67, 50); 
+   height: 100px;
+   width: 120px;
+   display: flex;
+   justify-content: center;
+   box-shadow: 0px 10px 12px black;
+   margin-left: 50%
+}
+
+
+ /*        NAVBAR STYLES        */
+
+
+header .navbar {
+display: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+height: 50vh;
+width: 150px;
+box-sizing: border-box;
+position: absolute;
+position: fixed;
+top:20%;
+right:10px;
+background-color: rgb(27, 67, 50);
+margin-top: 5%;
+font-size: 18px;
+box-shadow: 0px 10px 12px black;
+border-left: 2px solid rgb(8, 8, 8);
+
+}
+
+.navbar a {
+
+margin-bottom: 30px;
+height: 10px;
+width: 10px;
+}
+
+
+.navbar ul {
+   list-style-type: none;
+   padding:15px;
+}
+
+.navbar ul li {
+   margin-bottom: 40px;
+   text-align: center;
+   justify-content: center;
+
+}
+.navbar ul a {
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+
+}
+.navbar ul a:hover {
+   color: rgb(8, 8, 8);
+   transition: 0.5s;
+}
+.navbar ul li:first-child {
+color: green;
+}
+
+
+/*     BURGER MENU    */
+
+.burger{
+   position: absolute;
+   top: 0;
+   right: 0;
+   }
+   .burger img {
+   width: 50px;
+   height: 50px;
+   margin: 10px;
+   }
+
+/*     SOCIAL MEDIA BAR        */
+
+.icon img {
+height: 30px;
+width: 30px;
+margin: 20px;
+}
+.icon {
+display: flex;
+flex-direction: column;
+position: fixed;
+box-shadow: 0px 10px 12px black;
+background-color: rgb(27, 67, 50);
+}
+
+/*     HERO TITLE PORTFOLIO   */
+.hero {
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 1em;
+font-size: 25px;
+padding: 10px;
+margin-top: 50px;
+}
+
+/*  PRESENTATION SECTION  */
+
+.presentation p {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   font-size: 2em;
+   margin: 50px;
+   padding: 20px;
+
+}
+.presentation {
+
+   color: white;
+   padding: 60px;
+   margin: 20px;
+}
+
+/*         MAIN PAGE PROJECTS CONTAINER       */ 
+.project {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 1em;
+   font-size: 35px;
+   font-weight: bold;
+   padding: 10px;
+   margin-top: 50px;
+   }
+
+   /*          CARD OF PROJECT              */
+.container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 100px;
+   margin-right: 10%;
+}
+.card {
+   width: 425px;
+   border-radius: 8px;
+   background-color: white;
+   overflow: hidden;
+   box-shadow: 0px 2px 4px;
+   margin: 20px;
+   box-shadow: 0px 15px 20px black;
+   border: 0.09px solid rgb(68, 67, 67);
+   }
+
+.content {
+   background-color: white;
+   color : black;
+   padding: 10px;
+   width: 300px;
+   height: 220px;
+   
+}
+
+.card img {
+   width: 100%;
+   height: auto;
+   border: 1px inset black;
+}
+.content button {
+   background-color:  rgb(8, 28, 21);
+   position: absolute;
+   color: white;
+   font-weight: bold;
+   height: 50px;
+   width: 150px;
+}
+.content button:hover {
+   color:rgb(8, 28, 21);
+   background-color: white;
+   transition: 0.5s;
+
+}
+.content .btn {
+   margin-bottom: 5px;
+}
+
+
+
+/*     FOOTER CONTENT      */
+
+footer .end {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
+   margin: 30px;
+   
+}
+.end ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+}
+.end ul a {
+   text-decoration: none;
+   color: white;
+   margin: 15px;
+   font-size: 25px;
+}
+
+/*   SPONSOR ORGANIZATIONS  SECTION  */
+
+
+.sponsor {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 300px;
+}
+.sponsor img {
+   height: 100px;
+   width: 100px;
+   margin: 20px;
+}
+.sponsor-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.2em;
+   font-size: 20px;
+   margin-top: 50px;
+}
+
+
+ /*       MEDIA QUERIES RESPONSIVE       */
+ 
+@media screen and (max-width:540px) {
+   
+   header .burger {
+   display: block;
+   }
+   .navbar{
+      display: none;
+   }
+   header {
+      display: none;
+   }
+
+}
+
+@media screen and (min-width:540px) {
+header .navbar {
+display: none;
+}
+header .burger {
+display: block;
+}
+
+}
+
+@media screen and (min-width:740px) {
+   header .navbar {
+      display: block;
+      }
+      header .burger {
+      display: none;
+      }
+}
+@media screen and (min-width:900px) {
+
+}
